@@ -6,10 +6,11 @@
 // By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
 
 function findFibs(num) {
-  let fibArr = [1, 2];
+  let fibArr = [1, 2]; // Initialized array with first two numbers for ease of use
   if (num === 1) return [1];
   if (num === 2) return fibArr;
   for (let i = 1; i < num; i++) {
+    // Used for loop because I love writing them
     if (i === fibArr[fibArr.length - 2] + fibArr[fibArr.length - 1]) {
       fibArr.push(i);
     }
@@ -20,9 +21,12 @@ function getEvenFibs(arr) {
   return arr.filter(num => num % 2 === 0);
 }
 function sumEvenFib(num) {
-  let evenFibs = getEvenFibs(findFibs(num));
+  if (num < 1) return 0;
+  let evenFibs = getEvenFibs(findFibs(num)); // Combined function calls for concise code
   return evenFibs.reduce((total, accum) => {
     return (total += accum);
   }, 0);
 }
 console.log(sumEvenFib(4000000));
+
+module.exports = sumEvenFib;

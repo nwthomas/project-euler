@@ -14,12 +14,12 @@ Project Euler intends to expose individuals to a wide range of various problems 
 
 ## Table of Contents
 
-- [Problem 1: Multiples of 3 and 5](./problem-solutions/problem-1.js)
-- [Problem 2: Even Fibonacci numbers](./problem-solutions/problem-2.js)
+- [Problem 1: Multiples of 3 and 5](./problem-solutions/problem-1)
+- [Problem 2: Even Fibonacci numbers](./problem-solutions/problem-2)
 
 ## Built With
 
-- My solutions use [Javascript](https://www.ecma-international.org/ecma-262/6.0/) and [Jasmine](https://jasmine.github.io/) for unit testing
+- My solutions use [Javascript](https://www.ecma-international.org/ecma-262/6.0/) for the code and [Jasmine](https://jasmine.github.io/) for unit testing
 
 ## Authors
 

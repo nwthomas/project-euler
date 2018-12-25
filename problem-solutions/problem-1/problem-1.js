@@ -5,6 +5,7 @@
 // Find the sum of all the multiples of 3 or 5 below 1000.
 
 function multiples(num) {
+  if (num < 0) return "That number doesn't work.";
   let multiplesArr = [];
   for (let i = 1; i <= num; i++) {
     // Used for loop because they are fun to write
@@ -20,3 +21,5 @@ function multiples(num) {
   }, 0);
 }
 console.log(multiples(100)); // Will get result for any number
+
+module.exports = multiples;
